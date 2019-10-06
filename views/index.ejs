@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<h1>Blog post</h1>
+
+<% posts.forEach(el => { %>
+    <div>
+        <h2> <%= el.title %> </h2>
+        <img src="<%= el.image %>" alt="">
+        <br>
+        <span> <%= el.created %> </span>
+        <p> <%= el.body %> </p>
+    </div>
+<% }); %>
+
+<% include partials/footer %>
