@@ -6,6 +6,6 @@ i.icon {
     margin-top: 7.0em;
 }
 
-img {
-    object-fit: contain;
+#delete {
+    display: inline;
 }
