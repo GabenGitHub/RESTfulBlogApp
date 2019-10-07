@@ -1,5 +1,7 @@
 <% include partials/header %>
 
+<br>
+<br>
 <h1>Blog post</h1>
 
 <% posts.forEach(el => { %>
@@ -8,7 +10,8 @@
         <img src="<%= el.image %>" alt="">
         <br>
         <span> <%= el.created %> </span>
-        <p> <%= el.body %> </p>
+        <p> <%= el.body.substring(0, 100) %> </p>
+        <a href="/blogs/<%= el._id %>">Read more</a>
     </div>
 <% }); %>
 
